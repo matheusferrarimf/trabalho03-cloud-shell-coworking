@@ -136,40 +136,11 @@ O script `03_estrutura.sh` cria os seguintes diretórios:
 
 Também são criados arquivos CSV simples para simular dados operacionais do coworking.
 
-## Evidências de Funcionamento
-
-As evidências devem ser geradas na máquina do aluno e salvas em `evidencias/`. Sugestões de prints:
-
-1. `docker ps` mostrando o container em execução.
-2. Conteúdo do `docker-compose.yml` mostrando volumes.
-3. `ls -l scripts/` mostrando permissão de execução.
-4. Execução de `./01_update.sh`.
-5. Execução de `./02_apache.sh`.
-6. Execução de `./03_estrutura.sh` e `find /app/coworking`.
-7. Execução de `./04_backup.sh` e `ls -lh /app/backups`.
-8. Execução de `./05_deploy.sh` e site aberto em `localhost:8080`.
-9. Execução de `./07_monitoramento.sh`.
-10. Execução de `./08_usuarios_permissoes.sh`.
-11. Execução de `./09_relatorio.sh`.
-12. Imagem publicada no DockerHub.
-
 ## DockerHub
 
-Após testar o projeto, publique a imagem no DockerHub:
+Imagem publicada em:
 
-```bash
-docker login
-docker build -t seu-usuario/trabalho03-coworking:1.0 .
-docker push seu-usuario/trabalho03-coworking:1.0
-```
-
-Link da imagem publicada:
-
-```text
-https://hub.docker.com/r/seu-usuario/trabalho03-coworking
-```
-
-Substitua `seu-usuario` pelo seu usuário real do DockerHub.
+https://hub.docker.com/r/mathferrarisantos/trabalho03-coworking
 
 ## Uso de IA
 

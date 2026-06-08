@@ -1,0 +1,6 @@
+backups/*.tar.gz
+logs/*.log
+logs/relatorio_execucao.txt
+evidencias/*.png
+evidencias/*.jpg
+evidencias/*.jpeg

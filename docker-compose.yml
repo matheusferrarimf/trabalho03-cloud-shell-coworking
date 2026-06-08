@@ -1,0 +1,14 @@
+services:
+  coworking-linux:
+    build: .
+    container_name: trabalho03-linux-coworking
+    ports:
+      - "8080:80"
+    volumes:
+      - ./backups:/app/backups
+      - ./logs:/app/logs
+      - ./evidencias:/app/evidencias
+      - ./source:/app/source
+      - ./scripts:/app/scripts
+    tty: true
+    stdin_open: true

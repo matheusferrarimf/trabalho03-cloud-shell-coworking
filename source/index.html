@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coworking Cloud - Gestão</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="topo">
+        <div>
+            <h1>Coworking Cloud</h1>
+            <p>Sistema simples de gestão para um pequeno coworking</p>
+        </div>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="cards">
+            <article class="card">
+                <span id="total-salas">3</span>
+                <p>Salas cadastradas</p>
+            </article>
+            <article class="card">
+                <span id="total-reservas">0</span>
+                <p>Reservas do dia</p>
+            </article>
+            <article class="card">
+                <span>Apache</span>
+                <p>Publicado via deploy shell</p>
+            </article>
+        </section>
+
+        <section class="painel">
+            <h2>Nova reserva</h2>
+            <form id="form-reserva">
+                <label>
+                    Nome do membro
+                    <input type="text" id="membro" placeholder="Ex.: Ana Souza" required>
+                </label>
+
+                <label>
+                    Sala
+                    <select id="sala" required>
+                        <option value="Sala Reunião Azul">Sala Reunião Azul</option>
+                        <option value="Estação Compartilhada">Estação Compartilhada</option>
+                        <option value="Sala Privativa">Sala Privativa</option>
+                    </select>
+                </label>
+
+                <label>
+                    Data
+                    <input type="date" id="data" required>
+                </label>
+
+                <label>
+                    Horário
+                    <input type="time" id="hora" required>
+                </label>
+
+                <button type="submit">Cadastrar reserva</button>
+            </form>
+        </section>
+
+        <section class="painel">
+            <h2>Reservas cadastradas no navegador</h2>
+            <p class="descricao">Este pequeno sistema usa HTML, CSS e JavaScript. Ele serve para testar o deploy no Apache e contextualizar os scripts de backup, logs, permissões e monitoramento.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Membro</th>
+                        <th>Sala</th>
+                        <th>Data</th>
+                        <th>Hora</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-reservas"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Trabalho 03 - Linux, Shell Script e Cloud Computing | Matheus Ferrari dos Santos</p>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
